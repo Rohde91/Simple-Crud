@@ -16,6 +16,7 @@ public class Read {
                 String data = myReader.nextLine();
                 System.out.println("File content:");
                 System.out.println(data);
+                //Udskriver data inde i filen.
             }
             myReader.close();
         }
@@ -31,8 +32,10 @@ public class Read {
             System.out.println("Writeable: " + myObj.canWrite());
             System.out.println("Readable " + myObj.canRead());
             System.out.println("File size in bytes " + myObj.length());
+            //if statement udskriver alt information omkring filen.
         } else {
             System.out.println("The file does not exist!");
+            //hvis fejl sker.
         }
     }
 }
